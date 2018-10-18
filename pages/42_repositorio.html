@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="icon" href="../images/favicon.ico">
+	<link rel="icon" href="../images/favicon.ico"><link rel="stylesheet" href="/scss/loading.css">
 	<script src="/assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js"></script>
 
 	<title>Nasdacoin Admin - Repositório</title>
 </head>
 
-<body class="hold-transition skin-blue layout-top-nav">
+<body class="hold-transition skin-blue layout-top-nav loading">
 	<div class="wrapper">
 
 		<header class="main-header"></header>
@@ -20,6 +20,13 @@
 
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
+            <section class="content-header">
+                <h1> &nbsp; </h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-package-down"></i> Admin</a></li>
+                    <li class="breadcrumb-item active">Repositório</li>
+                </ol>
+            </section>
 
             <link href="../..//assets/vendor_components/nestable/nestable.css" rel="stylesheet" type="text/css" />
 
@@ -111,20 +118,20 @@
                                     updateOutput($('#nestable').data('output', $('#nestable-output')));
                                 }, 1500);
 
-                                </script>
-                            </div>
+                            </script>
                         </div>
                     </div>
-                </section>
-                <!-- /.content -->
+                </div>
+            </section>
+            <!-- /.content -->
 
-            </div>
-            <!-- /.content-wrapper -->
-
-            <footer class="main-footer"></footer>
         </div>
+        <!-- /.content-wrapper -->
 
-        <script>var activeMenu = 'repositorio'; </script>
-        <script src="/layout-builder.js"></script>
-    </body>
-    </html>
+        <footer class="main-footer"></footer>
+    </div>
+
+    <script>var activeMenu = 'repositorio'; </script>
+    <script src="/layout-builder.js"></script>
+</body>
+</html>
